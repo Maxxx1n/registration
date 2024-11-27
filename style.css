@@ -1,0 +1,129 @@
+@font-face {
+    font-family: "Inter" sans-serif;
+    src: url(font/Inter_18pt-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Inter" sans-serif;
+    src: url(font/Inter_24pt-Bold.ttf);
+    font-weight: 700;
+}
+
+body {
+    position: relative;
+    margin: 0;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    background: #f9f9;
+  }
+  
+  img {
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .menu > a{
+    font-family: "Inter" sans-serif;
+    font-weight: 400;
+    color: #d5006d;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .menu > a:hover {
+    color: black;
+  }
+  
+  .item {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .item-4 {
+    font-family: "Inter" sans-serif;
+    font-weight: 400;
+    color: #d5006d;
+    text-decoration: none;
+  }
+  
+  .tooltip {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    background-color: #d5006d;
+    font-family: "Inter" sans-serif;
+    font-weight: 400;
+    color: black;
+    padding: 5px;
+  }
+  
+  .item:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .main {
+    position: absolute;
+    width: 80%;
+    top: 160px;
+    left: 60px;
+    background: #f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 0px 1px rgba(213, 0, 109, 1);
+    -moz-box-shadow: 5px 5px 0px 1px rgba(213, 0, 109, 1);
+    box-shadow: 5px 5px 0px 1px rgba(213, 0, 109, 1)
+  }
+  
+  .registration-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-family: "Inter" sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #d5006d;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d5006d;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  input:focus {
+    border-color: #f9f;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #d5006d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #f9f;
+  }
